@@ -40,7 +40,8 @@
         //Platform Main Buttons
         
         //Platform Components Buttons
-        const tellerSmallA = '<b><a target="_blank" href="https://github.com/dfralan/Teller">Teller<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px"	 height="14.6px" viewBox="0 0 22 14.6" style="overflow:visible;enable-background:new 0 0 22 14.6;" xml:space="preserve"><style type="text/css">	.stayPlane{fill:'+ userColor +';}</style><defs></defs><path class="stayPlane" d="M5.1,6l14.5-5.9C19.9,0,20.1,0.3,20,0.5l-9.1,14c-0.1,0.2-0.5,0.1-0.5-0.1L10,7.5c0-0.1-0.1-0.2-0.2-0.3L5.2,6.5C4.9,6.5,4.9,6.1,5.1,6z"/></svg></a></b>'
+        // const tellerSmallA = '<b><a target="_blank" href="https://github.com/dfralan/Teller">Teller<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px"	 height="14.6px" viewBox="0 0 22 14.6" style="overflow:visible;enable-background:new 0 0 22 14.6;" xml:space="preserve"><style type="text/css">	.stayPlane{fill:'+ userColor +';}</style><defs></defs><path class="stayPlane" d="M5.1,6l14.5-5.9C19.9,0,20.1,0.3,20,0.5l-9.1,14c-0.1,0.2-0.5,0.1-0.5-0.1L10,7.5c0-0.1-0.1-0.2-0.2-0.3L5.2,6.5C4.9,6.5,4.9,6.1,5.1,6z"/></svg></a></b>'
+        const tellerSmallA = "RoboWizard"
         //Feedback URL variables
         var ffu = "";//feedbackFormUrl
         //Regex section
@@ -1202,8 +1203,8 @@
         <brick id="fatherBrick">
             <brick id="feedbackBrick">
                 <brick id="mainNotificationBrick">
-                    <brick id="titleBrick">` + byLanguage("How would you describe your experience?","Califique su experiencia.") + `</brick>
-                    <brick id="paragraphBrick">` + byLanguage(`Powered by `+ tellerSmallA,`Con el poder de `+ tellerSmallA) + `</brick>
+                    <brick id="titleBrick">` + byLanguage("How would you rate your experience?","How would you rate your experience?") + `</brick>
+                    <brick id="paragraphBrick">` + byLanguage(`Powered by `+ tellerSmallA,`Powered by `+ tellerSmallA) + `</brick>
                 </brick>
                 <brick id="emojisBrick">
                     <brick id="emojiBrick1">
@@ -1216,7 +1217,7 @@
                         <brick id="emojiFaceBrick2">
                             <svg id="GoodFaceTeller" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs></defs><g><circle class="tellersFace" cx="20" cy="20" r="20"/><g><path class="tellersGesture" d="M27.17,13.58a1.51,1.51,0,1,0,1.51,1.51A1.52,1.52,0,0,0,27.17,13.58Z"/><path class="tellersGesture" d="M14.34,15.09a1.51,1.51,0,1,0-1.51,1.51A1.52,1.52,0,0,0,14.34,15.09Z"/><path class="tellersGesture" d="M25,20.71a8.54,8.54,0,0,1-5,1.34,8.47,8.47,0,0,1-5-1.34,1,1,0,1,0-1.28,1.53A10.17,10.17,0,0,0,20,24.05a10.17,10.17,0,0,0,6.3-1.81A1,1,0,1,0,25,20.71Z"/></g></g></svg>
                         </brick>
-                        <brick id="emojiDescriptionBrick2">` + byLanguage("Good","Buena") + `</brick>
+                        <brick id="emojiDescriptionBrick2">` + byLanguage("Good","Good") + `</brick>
                     </brick>
                     <brick id="emojiBrick3">
                         <brick id="emojiFaceBrick3">
@@ -1228,24 +1229,24 @@
                         <brick id="emojiFaceBrick4">
                             <svg id="BadFaceTeller" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs></defs><g><circle class="tellersFace" cx="20" cy="20" r="20"/><g><path class="tellersGesture" d="M27.17,13.58a1.51,1.51,0,1,0,1.51,1.51A1.52,1.52,0,0,0,27.17,13.58Z"/><path class="tellersGesture" d="M14.34,15.09a1.51,1.51,0,1,0-1.51,1.51A1.52,1.52,0,0,0,14.34,15.09Z"/><path class="tellersGesture" d="M20,20.47a10.18,10.18,0,0,0-6.3,1.82A1,1,0,1,0,15,23.82a8.46,8.46,0,0,1,5-1.35,8.46,8.46,0,0,1,5,1.35,1,1,0,0,0,.64.23,1,1,0,0,0,.64-1.76A10.18,10.18,0,0,0,20,20.47Z"/></g></g></svg>
                         </brick>
-                        <brick id="emojiDescriptionBrick4">` + byLanguage("Bad","Mala") + `</brick>
+                        <brick id="emojiDescriptionBrick4">` + byLanguage("Bad","Bad") + `</brick>
                     </brick>
                     <brick id="emojiBrick5">
                         <brick id="emojiFaceBrick5">
                             <svg id="FuriousFaceTeller" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs></defs><g><circle class="tellersFace" cx="20" cy="20" r="20"/><g><path class="tellersGesture" d="M27.17,13.58a1.51,1.51,0,1,0,1.51,1.51A1.52,1.52,0,0,0,27.17,13.58Z"/><path class="tellersGesture" d="M14.34,15.09a1.51,1.51,0,1,0-1.51,1.51A1.52,1.52,0,0,0,14.34,15.09Z"/><path class="tellersGesture" d="M20,20.13c-4.44,0-6.18,3-6.49,4.59a1,1,0,0,0,.21.82,1,1,0,0,0,.78.37h11a1,1,0,0,0,.79-.38,1,1,0,0,0,.19-.84A6.32,6.32,0,0,0,20,20.13Z"/></g></g></svg>
                         </brick>
-                        <brick id="emojiDescriptionBrick5">` + byLanguage("Furious","Furiosa") + `</brick>
+                        <brick id="emojiDescriptionBrick5">` + byLanguage("Furious","Furious") + `</brick>
                     </brick>
                     <brick id="emojiSelectorBrick"></brick>
                 </brick>
                 <brick id="textAreasBrick">
-                    <textarea id="textAreaBrick" placeholder="` + byLanguage("How would you describe your experience?","Compartanos su experiencia.") + `"></textarea>
+                    <textarea id="textAreaBrick" placeholder="` + byLanguage("How would you describe your experience?","How would you describe your experience?") + `"></textarea>
                 </brick>
                     <brick id="inputAreasBrick">
-                        <input id="inputAreaBrick" placeholder="` + byLanguage("email@example.com","correo@ejemplo.com") + `"></input>
+                        <input id="inputAreaBrick" placeholder="` + byLanguage("email@example.com","email@example.com") + `"></input>
                     </brick>
-                    <brick id="actionButtonBrick">` + byLanguage("NEXT","SIG.") + `</brick>
-                    <brick id="skipButtonBrick">` + byLanguage("Skip","Omitir") + `</brick>
+                    <brick id="actionButtonBrick">` + byLanguage("NEXT","NEXT.") + `</brick>
+                    <brick id="skipButtonBrick">` + byLanguage("Skip","Skip") + `</brick>
                     <brick id="notificationParagraphBrick"></brick>
             </brick>
             <brick id="sharedComponentsArea">
@@ -1314,7 +1315,7 @@
         //Get side by user
         function getSide(){
             let a = tellerTag.getAttribute("side")
-            if (a == null || a == "none" || a == "" || a == "left"){
+            if (a == null || a == "none" || a == "" || a == "right"){
                 return [
                     "left",
                     'transparent '+ byTheme(realWhite,charmingGrey) +' transparent transparent',
@@ -1475,15 +1476,15 @@
                 a = tellerTag.getAttribute("callToAction")
                 if (a == null || a == "none" || a == ""){
                     if(stateGeneral){
-                        hoverBrick.textContent = byLanguage("We are online. ","Estamos en línea. ")+byLanguage("Share your user experience with us or send us a message.","Comparte tu experiencia con nosotros o envíanos un mensaje.")
+                        hoverBrick.textContent = "We are online. Share your user experience with us or send us a message."
                     }
                     else{
-                        hoverBrick.textContent = byLanguage("Share your user experience with us or send us a message.","Comparte tu experiencia con nosotros o envíanos un mensaje.")
+                        hoverBrick.textContent = "Share your user experience with us or send us a message."
                     }
                 }
                 else{
                     if(stateGeneral){
-                        hoverBrick.textContent = byLanguage("We are online. ","Estamos en línea. ") + a
+                        hoverBrick.textContent = "We are online. " + a
                     }
                     else{
                         hoverBrick.textContent = a
@@ -1812,7 +1813,7 @@
                     messageTeller = ""; //Set message on variable
                     actionButtonBrick.style.color = realWhite;
                     actionButtonBrick.style.backgroundColor = nebulaGrey;
-                    notificationAppear(notificationParagraphBrick, byLanguage("The message must not be empty","El mensaje no puede estar vacío."));
+                    notificationAppear(notificationParagraphBrick, "The message must not be empty");
                 }
                 else if(isMsg){
                     messageTeller = textAreaBrick.value;
@@ -1820,7 +1821,7 @@
                     messageTeller = textAreaBrick.value; //Set message on variable
                     actionButtonBrick.style.color = byTheme(realWhite,charmingGrey);
                     actionButtonBrick.style.backgroundColor = userColor;
-                    notificationAppear(notificationParagraphBrick, byLanguage("Thanks for your feedback","Gracias por tu comentario."));
+                    notificationAppear(notificationParagraphBrick, "Thanks for your feedback");
                 }
                 else if(!isMsg){
                     messageTeller = "";
@@ -1828,7 +1829,7 @@
                     messageTeller = ""; //Set message on variable
                     actionButtonBrick.style.color = realWhite;
                     actionButtonBrick.style.backgroundColor = nebulaGrey;
-                    notificationAppear(notificationParagraphBrick, byLanguage("Use letters from Aa-Zz, numbers from 0-9, and supported special signs (?!.,; :)." ,"Usá letras de Aa-Zz, números de 0-9, y signos admitidos (?!.,;:)."));
+                    notificationAppear(notificationParagraphBrick, "Use letters from Aa-Zz, numbers from 0-9, and supported special signs (?!.,; :).");
                 }    
                 return;
             });
@@ -1843,7 +1844,7 @@
                     lockAndLoudTeller = false;
                     actionButtonBrick.style.color = realWhite;
                     actionButtonBrick.style.backgroundColor = nebulaGrey;
-                    notificationAppear(notificationParagraphBrick, byLanguage('The field cannot be empty.' ,'Este campo debe llenarse.'));
+                    notificationAppear(notificationParagraphBrick, 'The field cannot be empty.');
                 }
                 else if(!isEmail){
                     emailTeller = "";
@@ -1851,7 +1852,7 @@
                     lockAndLoudTeller = false;
                     actionButtonBrick.style.color = realWhite;
                     actionButtonBrick.style.backgroundColor = nebulaGrey;
-                    notificationAppear(notificationParagraphBrick, byLanguage("Not valid email address." ,"Correo electrónico no válido."));
+                    notificationAppear(notificationParagraphBrick, "Not valid email address.");
                 }
                 else if(isEmail){
                     emailTeller = inputAreaBrick.value;
@@ -1897,7 +1898,7 @@
                 inputAreaBrick.style.display = "none";
                 actionButtonBrick.style.display = "none";
                 titleBrick.style.transform = "translateY(65px)";
-                notificationAppear(titleBrick, byLanguage('We receive the feedback, thanks for your time.','Recibimos su comentario, gracias por su tiempo.')); 
+                notificationAppear(titleBrick, 'We receive the feedback, thanks for your time.'); 
                 
             })
             .catch(function(error) {
@@ -1906,7 +1907,7 @@
                 inputAreaBrick.style.display = "none";
                 actionButtonBrick.style.display = "none";
                 titleBrick.style.transform = "translateY(35px)";
-                notificationAppear(titleBrick, byLanguage('Something went wrong, you should try later.','Algo salió mal, no hemos podido cargar su solicitud, por favor intentelo más tarde.')); 
+                notificationAppear(titleBrick, 'Something went wrong, you should try later.'); 
                 
             });
             setTimeout(function(){fatherBrick.style.transform = "translateY(20px)";
@@ -1931,7 +1932,7 @@
                 emailTeller = "none";
                 emailReadyTeller = true;
                 lockAndLoudTeller = true;
-                paragraphBrick.innerHTML = byLanguage('Powered by '+ tellerSmallA,'Con el poder de '+ tellerSmallA);
+                paragraphBrick.innerHTML = 'Powered by '+ tellerSmallA;
                 paragraphBrick.style.textAlign= "center";             
                 paragraphBrick.style.opacity = "1";
                 titleBrick.style.opacity = "0";
@@ -1945,7 +1946,7 @@
             actionButtonBrick.addEventListener("click", function() {
                 //Empty message
                 if(textAreaBrick.value == ""){
-                    notificationAppear(notificationParagraphBrick, byLanguage("The message must not be empty","El mensaje no puede estar vacío."));
+                    notificationAppear(notificationParagraphBrick, "The message must not be empty");
                 }
                 //Emotion, message and email ready to fetch
                 else if(emotionSelected == true && messageReady == true && emailReadyTeller == true && lockAndLoudTeller == true){
@@ -1973,12 +1974,12 @@
                     textAreasBrick.style.opacity = "0";
                     inputAreasBrick.style.display = "block";
                     setTimeout(function(){
-                        notificationAppear(titleBrick, byLanguage('Please enter your email if you are happy for us to contact you, if not press "skip".','Ingrese su correo si esta de acuerdo en que nos comuniquemos con usted, de lo contrario presione "omitir".'));
+                        notificationAppear(titleBrick, 'Please enter your email if you are happy for us to contact you, if not press "skip".');
                         emojisBrick.style.display = "none";
                         checkEmail();
                         fatherBrick.style.height = "220px";
                         currentHeightforFeedback = 220;
-                        actionButtonBrick.textContent = byLanguage("SEND","ENVIAR");
+                        actionButtonBrick.textContent = "SEND";
                         actionButtonBrick.style.color = realWhite;
                         actionButtonBrick.style.backgroundColor = nebulaGrey;
                         inputAreasBrick.style.top = "120px";
